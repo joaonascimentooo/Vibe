@@ -48,26 +48,26 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return email; // Usamos o email como username
+        return email;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return true; // Conta nunca expira
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return true; // Conta nunca é bloqueada
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return true; // Credenciais nunca expiram
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return true; // Conta sempre está ativada
+        return true;
     }
 }

@@ -3,6 +3,7 @@ package com.gerson.Vibe.services;
 import com.gerson.Vibe.dto.LoginRequest;
 import com.gerson.Vibe.dto.RegisterRequest;
 import com.gerson.Vibe.dto.response.AuthResponse;
+import com.gerson.Vibe.exceptions.registro.EmailAlreadyExistsException;
 import com.gerson.Vibe.infra.JwtService;
 import com.gerson.Vibe.models.User;
 import com.gerson.Vibe.repositories.UserRepository;
@@ -26,10 +27,9 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
 
     public AuthResponse register(RegisterRequest request) {
-        // Verificar se o email já existe
         userRepository.findByEmail(request.getEmail())
                 .ifPresent(u -> {
-                    throw new RuntimeException("Email já está em uso");
+                    throw new EmailAlreadyExistsException("Email já está em uso");
                 });
 
         var user = new User();
