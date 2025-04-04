@@ -1,7 +1,7 @@
 package com.gerson.Vibe.services;
 
-import com.gerson.Vibe.dto.requests.BookRequest;
-import com.gerson.Vibe.dto.response.BookResponse;
+import com.gerson.Vibe.dto.requests.book.BookRequest;
+import com.gerson.Vibe.dto.response.book.BookResponse;
 import com.gerson.Vibe.models.Book;
 import com.gerson.Vibe.repositories.BookRepository;
 import lombok.RequiredArgsConstructor;

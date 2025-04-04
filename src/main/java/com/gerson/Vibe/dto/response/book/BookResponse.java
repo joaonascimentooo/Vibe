@@ -1,8 +1,7 @@
-package com.gerson.Vibe.dto.response;
+package com.gerson.Vibe.dto.response.book;
 
 import com.gerson.Vibe.enums.Genre;
 import com.gerson.Vibe.models.Book;
-import com.gerson.Vibe.repositories.BookRepository;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,4 +1,4 @@
-package com.gerson.Vibe.dto.requests;
+package com.gerson.Vibe.dto.requests.book;
 
 import com.gerson.Vibe.enums.Genre;
 import jakarta.validation.constraints.NotBlank;

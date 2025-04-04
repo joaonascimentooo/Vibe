@@ -1,7 +1,7 @@
 package com.gerson.Vibe.controllers;
 
-import com.gerson.Vibe.dto.requests.BookRequest;
-import com.gerson.Vibe.dto.response.BookResponse;
+import com.gerson.Vibe.dto.requests.book.BookRequest;
+import com.gerson.Vibe.dto.response.book.BookResponse;
 import com.gerson.Vibe.services.BookService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
